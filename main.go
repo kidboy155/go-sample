@@ -19,10 +19,14 @@ func (a *Avenger) isAlive() {
 	a.Alive = true
 }
 
-func main2() {
+func main() {
 	chao()
 	hi := greeting("Quoc")
 	fmt.Println(hi)
+	list := []int{1, 2, 3, 4}
+	addItem(1, 100, 200, 300)
+	addItem(100, list...)
+	change(list...)
 	w, h := rectInfo(100, 200)
 	fmt.Println(w, h)
 	avengers := []Avenger{
@@ -52,6 +56,15 @@ func main2() {
 	fmt.Println(string(jsonBytes))
 }
 
+func change(list ...int) {
+	list[0] = 999
+	fmt.Println(list)
+}
+
+func addItem(item int, list ...int) {
+	list = append(list, item)
+	fmt.Println(list)
+}
 func chao() {
 	fmt.Println("Hello")
 }

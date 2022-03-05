@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func slice() {
 
 	var slice []int
 	fmt.Println(slice)
