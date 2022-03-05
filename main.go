@@ -1,4 +1,5 @@
 package main
+
 // import he
 import (
 	"encoding/json"
@@ -18,7 +19,7 @@ func (a *Avenger) isAlive() {
 	a.Alive = true
 }
 
-func main() {
+func main2() {
 	chao()
 	hi := greeting("Quoc")
 	fmt.Println(hi)
@@ -59,7 +60,6 @@ func greeting(name string) string {
 	result := fmt.Sprintf("Hello %s", name)
 	return result
 }
-
 
 func rectInfo(w, h int) (width int, height int) {
 	return w, h
