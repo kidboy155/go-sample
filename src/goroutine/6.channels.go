@@ -7,7 +7,7 @@ import "fmt"
 // 3. select
 // 4. close channel
 
-func main() {
+func main6() {
 
 	// // unbuffered channel
 	// ch := make(chan int)
