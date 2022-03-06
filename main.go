@@ -19,7 +19,7 @@ func (a *Avenger) isAlive() {
 	a.Alive = true
 }
 
-func main() {
+func main1() {
 	chao()
 	hi := greeting("Quoc")
 	fmt.Println(hi)
