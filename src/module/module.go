@@ -17,7 +17,7 @@ go get github.com/fatih/color
 
 go mod graph
 */
-func main() {
+func main_module() {
 	ac := accounting.Accounting{Symbol: "$", Precision: 2}
 	fmt.Println(ac.FormatMoney(123456789.213123))
 
