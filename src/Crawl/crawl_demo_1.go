@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"time"
+	// "timetrack"
 )
 
 func crawl(w int, ch chan int) {
@@ -12,6 +13,7 @@ func crawl(w int, ch chan int) {
 }
 
 func main_demo_1() {
+	// defer TimeTrack(time.Now(), "Crawl: ")
 	urlCh := make(chan int, 10)
 	for i := 0; i < 10; i++ {
 		go crawl(i, urlCh)

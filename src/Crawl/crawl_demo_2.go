@@ -2,7 +2,8 @@ package main
 
 import (
 	"fmt"
-	"time"
+	// "time"
+	// "timetrack"
 )
 
 func crawlData(urls []int, ch chan int, cap int) {
@@ -28,19 +29,15 @@ func printData(channels []chan int, nRequests int) {
 		}
 	}
 }
-func TimeTrack(start time.Time, functionName string) {
-	elapesd := time.Since(start)
-	fmt.Println(functionName, "took", elapesd)
-}
-
 // Ý tưởng là chia đều n requests ra n channels chạy song song. Thằng nào trả về trước thì in ra trước
-func main() {
-	defer TimeTrack(time.Now(), "Crawl: ")
-	var urls []int
+func main_demo_2() {
+	// defer TimeTrack(time.Now(), "Crawl: ")
 	nRequests := 100000
+	urls := make([]int, nRequests)
+
 	nChannels := 5
 	for i := 0; i < nRequests; i++ {
-		urls = append(urls, i)
+		urls[i] = i
 	}
 
 	var channels []chan int
