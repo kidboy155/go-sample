@@ -15,13 +15,13 @@ func createPizza(pizza int) {
 	fmt.Printf("Create pizza %d \n", pizza)
 }
 
-func timeTrack(start time.Time, functionName string) {
+func TimeTrack(start time.Time, functionName string) {
 	elapesd := time.Since(start)
 	fmt.Println(functionName, "took", elapesd)
 }
 
 func main3() {
-	defer timeTrack(time.Now(), "Build Pizzas")
+	defer TimeTrack(time.Now(), "Build Pizzas")
 
 	number_of_ovens := 10
 	runtime.GOMAXPROCS(number_of_ovens)
