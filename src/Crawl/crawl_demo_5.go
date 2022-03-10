@@ -7,7 +7,7 @@ import (
 	"time"
 )
 
-func main() {
+func main_demo_5() {
 	stop := make(chan bool)
 	defer close(stop)
 
