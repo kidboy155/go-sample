@@ -25,7 +25,7 @@ func startPusher(queue chan<- int) chan<- bool {
 	}()
 	return stopChan
 }
-func main() {
+func main_crawl() {
 	defer TimeTrack1(time.Now(), "Crawling: ")
 	numberOfRequests := 1000
 	maxWorkerNumber := 5
