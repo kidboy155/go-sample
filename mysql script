@@ -1,1 +1,2 @@
 docker run -d --name mysql --privileged=true -e MYSQL_ROOT_PASSWORD="12345678" -e MYSQL_USER="food_delivery" -e MYSQL_PASSWORD="12345678" -e MYSQL_DATABASE="food_delivery" -p 3306:3306 bitnami/mysql:5.7
+docker run -d --name mysql1 --privileged=true -e MYSQL_ROOT_PASSWORD="12345678" -e MYSQL_USER="quocnv" -e MYSQL_PASSWORD="123456" -e MYSQL_DATABASE="code4func" -p 5432:5432 bitnami/mysql:5.7
